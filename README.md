@@ -20,9 +20,9 @@ Student before passing the test must enter his/her name, surname and password fo
 
 
 ##architecture
-Program implemented using MVC pattern. Model classes, as you may have guessed, are situated in package **dev.vmykh.testingapp.model**
+Program implemented using MVC pattern. Model classes, as you may have guessed, are situated in package *dev.vmykh.testingapp.model*
 
-Views and Controllers are in same package (requirement of JavaFX) **dev.vmykh.testingapp.view**
+Views and Controllers are in same package (requirement of JavaFX) *dev.vmykh.testingapp.view*
 
 there are also a bunch of unit tests for model
 
@@ -35,7 +35,7 @@ This is eclipse JavaFX project, so if you want to run it's recommended to have e
 You can also encounter some problems with text alignment, because linux and windows are using different fonts.
 
 You should also change variable RESOURCE_DIR (it specify directory for saving data) in class dev.vmykh.testingapp.model.ResourceBundle. 
-However, if you are using linux and your username is mrgibbs you may keep it same :)
+However, if you are using linux and your username is "mrgibbs" you may keep it unchanged :)
 
 
 
