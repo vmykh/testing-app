@@ -34,7 +34,7 @@ This is eclipse JavaFX project, so if you want to run it's recommended to have e
 
 You can also encounter some problems with text alignment, because linux and windows are using different fonts.
 
-You should also change variable RESOURCE_DIR (it specify directory for saving data) in class dev.vmykh.testingapp.model.ResourceBundle. 
+You should also change variable RESOURCE_DIR (it specifies directory for saving data) in class dev.vmykh.testingapp.model.ResourceBundle.
 However, if you are using linux and your username is "mrgibbs" you may keep it unchanged :)
 
 
