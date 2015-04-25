@@ -20,10 +20,9 @@ Student before passing the test must enter his/her name, surname and password fo
 
 
 ##architecture
-Program implemented using MVC pattern. Model classes, as you may have guessed, are situated in package 
->dev.vmykh.testingapp.model
-Views and Controllers are in same package (requirement of JavaFX)
->dev.vmykh.testingapp.view
+Program implemented using MVC pattern. Model classes, as you may have guessed, are situated in package **dev.vmykh.testingapp.model**
+
+Views and Controllers are in same package (requirement of JavaFX) **dev.vmykh.testingapp.view**
 
 there are also a bunch of unit tests for model
 
