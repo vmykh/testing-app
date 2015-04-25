@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxWidth="600.0" minWidth="600.0" prefHeight="30.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.vmykh.testingapp.view.QuestionLineController">
+   <children>
+      <HBox minHeight="28.0" spacing="8.0">
+         <children>
+            <Label fx:id="questionIdLabel" layoutX="112.0" layoutY="110.0" maxWidth="41.0" minWidth="35.0" prefHeight="25.0" prefWidth="41.0" text="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="questionTextLabel" layoutX="134.0" layoutY="110.0" maxWidth="507.0" minWidth="380.0" prefHeight="25.0" prefWidth="507.0" text="Тест с географии для начинающих">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <MenuButton layoutX="664.0" layoutY="107.0" mnemonicParsing="false" styleClass="edit-test-button" stylesheets="@styles.css">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleEdit" text="Редактировать" />
+                <MenuItem mnemonicParsing="false" onAction="#handleDelete" text="Удалить" />
+              </items>
+            </MenuButton>
+         </children>
+         <padding>
+            <Insets bottom="3.0" top="3.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

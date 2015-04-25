@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.vmykh.testingapp.view.SessionResultViewController">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="14.0" prefViewportHeight="504.0" prefViewportWidth="800.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox fx:id="contentVBox" alignment="TOP_CENTER" layoutY="14.0" prefHeight="504.0" prefWidth="800.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label text="Результат прохождения теста">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a4a4a4" height="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+                  <GridPane maxWidth="600.0" minWidth="596.0" prefHeight="245.0" prefWidth="600.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="183.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="434.0" minWidth="10.0" prefWidth="417.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="38.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Название теста:" GridPane.rowIndex="1" />
+                        <Label text="Номер теста:" />
+                        <Label text="Имя студента:" GridPane.rowIndex="2" />
+                        <Label text="Фамилия студента:" GridPane.rowIndex="3" />
+                        <Label text="Результат:" GridPane.rowIndex="5" />
+                        <Label text="Правильных ответов:" GridPane.rowIndex="6" />
+                        <Label fx:id="testNameLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Всего вопросов:" GridPane.rowIndex="7" />
+                        <Label text="Время начала:" GridPane.rowIndex="9" />
+                        <Label text="Время завершения" GridPane.rowIndex="10" />
+                        <Label text="Время прохождения:" GridPane.rowIndex="11" />
+                        <Label fx:id="testIdLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" />
+                        <Label fx:id="studentNameLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="studentSurnameLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="resultLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="correctAnswersLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label text="Процент правильных:" GridPane.rowIndex="8" />
+                        <Label fx:id="totalQuestionsLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="percentOfCorrectAnswersLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label fx:id="timeStartLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label fx:id="timeFinishLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label fx:id="timeElapsedLabel" prefHeight="22.0" prefWidth="434.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label text="Група:" GridPane.rowIndex="4" />
+                        <Label fx:id="groupLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <Label text="Ответы:">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane maxWidth="600.0" minHeight="28.0" minWidth="600.0" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label layoutY="4.0" text="№">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="50.0" layoutY="5.0" minWidth="100.0" text="Вопрос">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="461.0" layoutY="5.0" minWidth="100.0" text="Отвечено верно">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a4a4a4" height="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" prefHeight="35.0" spacing="10.0" styleClass="toolbar-lower" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+          <Button mnemonicParsing="false" onAction="#handleBack" stylesheets="@styles.css" text="Назад" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

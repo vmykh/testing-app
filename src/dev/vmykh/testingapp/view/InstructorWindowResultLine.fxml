@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxWidth="600.0" minWidth="600.0" prefHeight="30.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.vmykh.testingapp.view.InstructorWindowResultLineController">
+   <children>
+      <HBox minHeight="28.0" spacing="8.0">
+         <children>
+            <Label fx:id="testIdLabel" layoutX="112.0" layoutY="110.0" maxWidth="51.0" minWidth="35.0" prefHeight="25.0" prefWidth="51.0" text="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="studentNameLabel" layoutX="134.0" layoutY="110.0" maxWidth="284.0" minWidth="274.0" prefHeight="25.0" prefWidth="274.0" text="Джейсон Стетхэм">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="groupLabel" alignment="CENTER_RIGHT" layoutX="509.0" layoutY="110.0" maxWidth="153.0" minWidth="153.0" prefHeight="24.0" prefWidth="153.0" text="25.12.2014 25:28">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="testPassedLabel" alignment="CENTER" layoutX="612.0" layoutY="110.0" minWidth="50.0" prefHeight="25.0" prefWidth="53.0" text="Нет">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <MenuButton layoutX="664.0" layoutY="107.0" mnemonicParsing="false" styleClass="edit-test-button" stylesheets="@styles.css">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleDetails" text="Подробнее" />
+                <MenuItem mnemonicParsing="false" onAction="#handleDelete" text="Удалить" />
+              </items>
+            </MenuButton>
+         </children>
+         <padding>
+            <Insets bottom="3.0" top="3.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.vmykh.testingapp.view.StudentQuestionViewController">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="14.0" prefViewportHeight="504.0" prefViewportWidth="800.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox fx:id="contentVBox" alignment="TOP_CENTER" layoutY="14.0" onDragDetected="#handleNextQuestion" prefWidth="800.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <AnchorPane maxHeight="30.0" maxWidth="600.0" minHeight="30.0" minWidth="600.0" prefHeight="30.0" prefWidth="600.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="Вопрос номер">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="questionNumberLabel" alignment="CENTER_RIGHT" text="25">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="из">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="totalQuestionLabel" alignment="CENTER_RIGHT" text="50">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a4a4a4" height="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+                  <Label fx:id="questionStrLabel" maxWidth="600.0" text="Question">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane maxWidth="600.0" minWidth="600.0" prefWidth="600.0" />
+                  <Label text="Варианты ответов:">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a4a4a4" height="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+                  <VBox fx:id="answersVBox" maxWidth="600.0" minWidth="600.0" prefWidth="600.0" spacing="15.0" />
+                  <Label text="Изображение к вопросу:">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a4a4a4" height="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+                  <ImageView fx:id="imageView" fitHeight="110.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" prefHeight="35.0" spacing="10.0" styleClass="toolbar-lower" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="1000.0" />
+            <Button minWidth="180.0" mnemonicParsing="false" onAction="#handlePreviousQuestion" text="&lt; Предыдущий вопрос" />
+          <Button minWidth="180.0" mnemonicParsing="false" onAction="#handleNextQuestion" stylesheets="@styles.css" text="Следующий вопрос &gt;" />
+            <AnchorPane prefHeight="200.0" prefWidth="1000.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleFinishTest" text="Завершить тест" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

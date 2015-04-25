@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="235.0" maxWidth="243.0" minHeight="235.0" minWidth="243.0" prefHeight="235.0" prefWidth="243.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.vmykh.testingapp.view.EntryController">
+   <children>
+      <AnchorPane layoutX="57.0" layoutY="72.0" prefHeight="92.0" prefWidth="130.0">
+         <children>
+            <Button layoutY="67.0" mnemonicParsing="false" onAction="#enterAsInstructor" text="Администратор" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Button alignment="CENTER" layoutY="34.0" mnemonicParsing="false" onAction="#enterAsStudent" text="Студент" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Label alignment="CENTER" layoutY="14.0" text="Войти как:" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
